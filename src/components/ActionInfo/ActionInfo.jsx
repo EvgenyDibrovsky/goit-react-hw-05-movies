@@ -5,12 +5,12 @@ export const ActionInfo = () => {
   return (
     <ul>
       <li>
-        <NavLink to="cast" state={location.state}>
+        <NavLink to="cast" state={{ from: location.state.from }}>
           Cast
         </NavLink>
       </li>
       <li>
-        <NavLink to="reviews" state={location.state}>
+        <NavLink to="reviews" state={{ from: location.state.from }}>
           Reviews
         </NavLink>
       </li>
