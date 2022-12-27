@@ -10,7 +10,7 @@ const MovieDetails = () => {
   const { movieId } = useParams();
   const [movie, setMovie] = useState(null);
   const location = useLocation();
-  const goBack = location.state?.from ?? '/';
+  const goBack = location?.state?.from ?? '/';
 
   useEffect(() => {
     getMoviesById(movieId).then(setMovie);
