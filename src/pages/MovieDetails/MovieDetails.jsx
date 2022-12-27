@@ -3,14 +3,14 @@ import { Suspense } from 'react';
 import { useState, useEffect } from 'react';
 import { getMoviesById } from '../../services/api';
 import { BackLink } from 'components/BackLink/BackLink';
-import { MovieInfo } from 'components/MovieInfo/MovieInfo';
+import { MovieDetailsList } from 'components/MovieDetailsList/MovieDetailsList';
 import { ActionInfo } from 'components/ActionInfo/ActionInfo';
 
 const MovieDetails = () => {
   const { movieId } = useParams();
   const [movie, setMovie] = useState(null);
   const location = useLocation();
-  const goBack = location?.state?.from ?? '/';
+  const goBack = location.state?.from ?? '/';
 
   useEffect(() => {
     getMoviesById(movieId).then(setMovie);
@@ -23,7 +23,7 @@ const MovieDetails = () => {
     <>
       <BackLink to={goBack}>Go Back</BackLink>
 
-      <MovieInfo movie={movie} />
+      <MovieDetailsList movie={movie} />
 
       <h4>Additional information</h4>
       <ActionInfo />

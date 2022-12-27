@@ -5,9 +5,9 @@ import {
   Wrapper,
   Description,
   Title,
-} from './MovieInfo.styled';
+} from './MovieDetailsList.styled';
 
-export const MovieInfo = ({ movie }) => {
+export const MovieDetailsList = ({ movie }) => {
   const { title, poster_path, vote_average, overview, genres } = movie;
   const movieGenres = genres.map(genre => genre.name).join(', ');
 
