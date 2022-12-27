@@ -1,4 +1,4 @@
-import { List, CastItem, Img } from 'components/CastList/CastList.styled';
+import { List, CastItem, Img } from 'components/Cast/Caststyled';
 
 export const CastList = ({ cast }) => {
   return (

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getMovieCast } from 'services/api';
-import { CastList } from 'components/CastList/CastList';
+import { CastList } from 'components/Cast/Cast';
 
 const Cast = () => {
   const { movieId } = useParams();

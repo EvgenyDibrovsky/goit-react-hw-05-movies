@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { trendingMovies } from 'services/api';
-import { MovieList } from 'components/MovieList/MovieList';
+import { MovieList } from 'components/Movie/Movie';
 
 const Home = () => {
   const [movies, setMovies] = useState([]);

@@ -1,4 +1,4 @@
-import { ReviewsTitle, ReviewsTexst } from './ReviewsList.styled';
+import { ReviewsTitle, ReviewsTexst } from './Reviews.styled';
 
 export const ReviewsList = ({ reviews }) => {
   return (

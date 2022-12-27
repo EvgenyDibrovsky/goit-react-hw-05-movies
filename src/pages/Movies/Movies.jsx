@@ -2,7 +2,7 @@ import { useSearchParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { searchMovies } from '../../services/api';
 import { SearchBox } from 'components/SearchBox/SearchBox';
-import { MovieList } from 'components/MovieList/MovieList';
+import { MovieList } from 'components/Movie/Movie';
 
 const Movies = () => {
   const [searchParams, setSearchParams] = useSearchParams();

@@ -3,7 +3,7 @@ import { Suspense } from 'react';
 import { useState, useEffect } from 'react';
 import { getMoviesById } from '../../services/api';
 import { BackLink } from 'components/BackLink/BackLink';
-import { MovieDetailsList } from 'components/MovieDetailsList/MovieDetailsList';
+import { MovieInfo } from 'components/MovieInfo/MovieInfo';
 import { ActionInfo } from 'components/ActionInfo/ActionInfo';
 
 const MovieDetails = () => {
@@ -23,7 +23,7 @@ const MovieDetails = () => {
     <>
       <BackLink to={goBack}>Go Back</BackLink>
 
-      <MovieDetailsList movie={movie} />
+      <MovieInfo movie={movie} />
 
       <h4>Additional information</h4>
       <ActionInfo />
